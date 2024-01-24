@@ -10,3 +10,11 @@ const func = async () => {
   }
   
   func()
+
+  const { ipcRenderer } = require('electron');
+
+// Escuchar el evento desde el proceso principal
+ipcRenderer.on('update-not-available', (event, info) => {
+  // Mostrar una alerta en tu ventana HTML
+  alert(`La actualización se ha descargado. Reinicia la aplicación para aplicar la actualización.`);
+});

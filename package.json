@@ -1,7 +1,7 @@
 {
   "name": "electronupdates",
-  "version": "1.0.0",
-  "description": "version 1 de ElectronUpdates",
+  "version": "1.0.6",
+  "description": "version 3 de ElectronUpdates",
   "main": "index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -23,7 +23,9 @@
     "electron": "^28.1.4"
   },
   "dependencies": {
+    "electron-log": "^5.1.0",
     "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^6.1.7",
     "update-electron-app": "^3.0.0"
   }
 }
