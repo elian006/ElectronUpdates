@@ -31,4 +31,18 @@ module.exports = {
       config: {},
     },
   ],
+
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'elian006',
+          name: 'ElectronUpdates'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ]
 };
